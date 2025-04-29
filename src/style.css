@@ -209,6 +209,7 @@ table tr th {
 }
  
 .book .book-cover {
+  position: relative;
   max-width: 100%;
   aspect-ratio: 2 / 3;
   overflow: hidden;
