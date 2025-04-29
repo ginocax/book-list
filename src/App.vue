@@ -44,6 +44,7 @@ let books = reactive([
 ]);
 
 function addBook(newBook) {
+  newBook.id = Math.max(...books.map(el => el.id)) + 1;
   books.push(newBook);
   showAddBook.value = false;
 }
